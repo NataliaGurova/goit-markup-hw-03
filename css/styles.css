@@ -53,7 +53,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -72,7 +72,8 @@ ul {
 /*============ Haeder ===========*/
 
 .header {
-  padding: 24px 0;
+
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container-header {
@@ -91,6 +92,8 @@ ul {
 
   display: inline-flex;
   margin-left: 0;
+  margin-right: 76px; /*==*/
+
 }
 
 .header-logo .logo-part {
@@ -101,7 +104,8 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 76px;
+
+  padding: 24px 0;/*==*/
 }
 
 .nav-list {
@@ -130,6 +134,7 @@ ul {
 .address-list {
   display: flex;
   margin-left: 332px;
+  padding: 24px 0; /*===*/
   gap: 40px;
 }
 
@@ -169,7 +174,7 @@ ul {
   letter-spacing: 0.02em;
 
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
 }
 
 .top-button {
@@ -181,7 +186,10 @@ ul {
   background-color: #4d5ae5;
 
   display: block;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
+  border: none; 
   border-radius: 4px;
 }
 .top-button:hover,
@@ -239,12 +247,26 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
-  border-radius: 0px 0px 4px 4px;
+ gap: 24px;
+}
+
+.team-item {
+  background-color: #ffffff;
+
+
+  width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px; 
+}
+
+
+.container-team-text {
+  padding: 32px 0;
 }
 
 .team-top {
@@ -254,25 +276,29 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
+
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
-  margin-top: 8px;
-  margin-bottom: 32px;
-}
-
-.team-item .team-text {
   color: #434455;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  text-align: center; 
 }
+
 
 .team-item {
   background-color: #ffffff;
+
+
+  width: calc((100%-48px) / 3);
+  border-radius: 0px 0px 4px 4px; 
 }
 
 /*========Section 4========*/
@@ -301,11 +327,17 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  width: calc((100%-48px) / 3);
+
 }
 
 .photo-item {
   width: calc((100%-48px) / 3);
+}
+
+.container-photo-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
 }
 
 .photo-top {
@@ -315,7 +347,8 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
 
-  margin-top: 32px;
+  margin-bottom: 8px;
+ 
 }
 
 .photo-text {
@@ -326,8 +359,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  margin-top: 8px;
-  margin-bottom: 32px;
+
 }
 
 /*========Footer========*/
@@ -344,6 +376,8 @@ ul {
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-text {
