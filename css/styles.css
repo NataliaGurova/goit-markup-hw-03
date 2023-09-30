@@ -73,6 +73,7 @@ ul {
 .header {
 
   border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 
 .container-header {
@@ -92,6 +93,7 @@ ul {
   display: inline-flex;
   margin-left: 0;
   margin-right: 76px; /*==*/
+/*==*/
 
 }
 
@@ -104,7 +106,11 @@ ul {
   justify-content: flex-start;
   align-items: center;
 
-  padding: 24px 0;/*==*/
+ 
+}
+
+.nav-item {
+/*==*/
 }
 
 .nav-list {
@@ -133,7 +139,7 @@ ul {
 .address-list {
   display: flex;
   margin-left: 332px;
-  padding: 24px 0; /*===*/
+ /*===*/
   gap: 40px;
 }
 
@@ -370,13 +376,13 @@ ul {
 }
 
 .container-footer {
-  display: block;
+ 
 }
 
 .footer-logo .logo-part {
   color: #f4f4fd;
 
-  display: inline-block;
+  display: inline-block; 
   margin-bottom: 16px;
 }
 .footer-text {
