@@ -71,13 +71,13 @@ ul {
 /*============ Haeder ===========*/
 
 .header {
-
   border-bottom: 1px solid #e7e9fc;
   padding: 24px 0;
 }
 
 .container-header {
   display: flex;
+  margin: 0 auto;
 }
 
 .header-logo,
@@ -92,9 +92,7 @@ ul {
 
   display: inline-flex;
   margin-left: 0;
-  margin-right: 76px; /*==*/
-/*==*/
-
+  margin-right: 76px;
 }
 
 .header-logo .logo-part {
@@ -105,13 +103,11 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
- 
 }
 
 .nav-item {
-/*==*/
 }
+/*==*/
 
 .nav-list {
   display: inline-flex;
@@ -124,6 +120,8 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -139,7 +137,7 @@ ul {
 .address-list {
   display: flex;
   margin-left: 332px;
- /*===*/
+
   gap: 40px;
 }
 
@@ -194,7 +192,7 @@ ul {
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
-  border: none; 
+  border: none;
   border-radius: 4px;
 }
 .top-button:hover,
@@ -258,17 +256,15 @@ ul {
 
 .team-list {
   display: flex;
- gap: 24px;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
 
-
   width: calc((100%-72px) / 4);
-  border-radius: 0px 0px 4px 4px; 
+  border-radius: 0px 0px 4px 4px;
 }
-
 
 .container-team-text {
   padding: 32px 0;
@@ -294,16 +290,14 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  text-align: center; 
+  text-align: center;
 }
-
 
 .team-item {
   background-color: #ffffff;
 
-
   width: calc((100%-48px) / 3);
-  border-radius: 0px 0px 4px 4px; 
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*========Section 4========*/
@@ -332,7 +326,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-
 }
 
 .photo-item {
@@ -341,7 +334,7 @@ ul {
 
 .container-photo-text {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc; 
+  border: 1px solid #e7e9fc;
   border-top: none;
 }
 
@@ -353,7 +346,6 @@ ul {
   letter-spacing: 0.02em;
 
   margin-bottom: 8px;
- 
 }
 
 .photo-text {
@@ -363,8 +355,6 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-
 }
 
 /*========Footer========*/
@@ -376,15 +366,17 @@ ul {
 }
 
 .container-footer {
- 
 }
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+}
 
-  display: inline-block; 
+.footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
